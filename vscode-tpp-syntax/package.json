@@ -1,0 +1,30 @@
+{
+  "name": "tpp-syntax-highlight",
+  "displayName": "Linguagem TPP Syntax Highlight",
+  "description": "Realce de sintaxe para a linguagem TPP (Disciplina de Compiladores)",
+  "version": "1.0.0",
+  "publisher": "compiladores",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "tpp",
+        "aliases": ["TPP", "tpp"],
+        "extensions": [".tpp"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "tpp",
+        "scopeName": "source.tpp",
+        "path": "./syntaxes/tpp.tmLanguage.json"
+      }
+    ]
+  }
+}
